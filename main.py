@@ -2,13 +2,13 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-EMAIL = "harshsingh1676@gmail.com"
+EMAIL = "XYZ@gmail.com"
 APP_PASSWORD = "mftr zypk sqhr vkuz"
 
 # Email setup
 msg = MIMEMultipart()
 msg["From"] = EMAIL
-msg["To"] = "harshsingh1676@outlook.com"
+msg["To"] = "XYZoutlook.com"
 msg["Subject"] = "Testing mail by Python 😎"
 
 body = "Hum kar sakte hai sab kuch 😎🔥 Hindi bhi chalegi!"
@@ -22,13 +22,14 @@ server.starttls()
 server.login(EMAIL, APP_PASSWORD)
 
 receivers = [
-    "harshsingh1676@outlook.com",
-    "er.harsh2212@gmail.com",
-    "235ucm052@gbu.ac.in",
-    "harshsingh1676@gmail.com"
+    "XYZ@outlook.com",
+    "2212@gmail.com",
+    "2052@gbu.ac.in",
+    "ha@gmail.com"
 ]
 
 server.sendmail(EMAIL, receivers, msg.as_string())
 server.quit()
 
 print("✅ Mail sent successfully with emoji & Hindi")
+
