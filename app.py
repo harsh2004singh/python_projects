@@ -28,7 +28,10 @@ test_strings = [
     "grapes",
     "orange",
     "pineapple",
-    "kiwi"
+    "kiwi",
+    "DragonFruit",
+    "lichi",
+    "bera"
 ]
 
 # session state to keep same word during typing
@@ -63,3 +66,4 @@ if st.button("Submit"):
         # new word for next round
         st.session_state.random_string = random.choice(test_strings)
         st.session_state.start_time = None
+
