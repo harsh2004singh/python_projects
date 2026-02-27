@@ -20,13 +20,10 @@ And tenderly let them go
 So they might feel my comfort and love
 When at times they may feel alone.
 
-And in our body's absence, Lord,
-I'm praying they may know
-The only need that they would have
-Is what I've instilled in their heart and soul."""
 
 try:
     kit.text_to_handwriting(txt, "mother_poem.png", [0, 0, 138])
     print("Handwriting image created successfully!")
 except Exception as e:
+
     print("Error occurred:", e)
